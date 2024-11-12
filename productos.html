@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 15px;
+        }
+
+        
+        .btn-inicio {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-inicio:hover {
+            background-color: #0056b3;
+        }
+
+        
+        .productos-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        
+        .producto-item {
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .producto-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .producto-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .producto-item h5 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .producto-item p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #218838;
+        }
+
+        .descripcion-productos {
+      text-align: center;
+      margin: 20px auto;
+      font-size: 22px;
+      font-weight: 500;
+      max-width: 800px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+        
+        @media (max-width: 768px) {
+            .productos-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+
+            .producto-item {
+                padding: 15px;
+            }
+
+            .producto-item img {
+                height: 180px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <a href="#" class="btn-inicio" onclick="goBackToMain()">Volver al Inicio</a>
+       
+      
+        <div class="productos-gallery">
+            <div class="producto-item">
+                <img src="img/lampara1.jpg" alt="Producto 1">
+                <h5>Lámpara de Estilo Moderno</h5>
+                <p>Precio: $15.000 Cop</p>
+                <a href="https://wa.me/573113275947?text=Me%20interesa%20la%20Lámpara%20de%20Estilo%20Moderno%20por%20$15.000Cop" class="btn-comprar" target="_blank">Comprar</a>
+            </div>
+            <div class="producto-item">
+                <img src="img/lampara2.jpg" alt="Producto 2">
+                <h5>Lámpara Vintage</h5>
+                <p>Precio: $13.000 Cop</p>
+                <a href="https://wa.me/573113275947?text=Me%20interesa%20la%20Lámpara%20Vintage%20por%20$13.000Cop" class="btn-comprar" target="_blank">Comprar</a>
+            </div>
+            <div class="producto-item">
+                <img src="img/lampara3.jpg" alt="Producto 3">
+                <h5>Lámpara de Diseño Industrial</h5>
+                <p>Precio: $13.000</p>
+                <a href="https://wa.me/573113275947?text=Me%20interesa%20la%20Lámpara%20de%20Diseño%20Industrial%20por%20$13.000Cop" class="btn-comprar" target="_blank">Comprar</a>
+            </div>
+            <div class="producto-item">
+                <img src="img/lampara4.jpg" alt="Producto 4">
+                <h5>Lámpara de Escritorio</h5>
+                <p>Precio: $13.000</p>
+                <a href="https://wa.me/573113275947?text=Me%20interesa%20la%20Lámpara%20de%20Techo%20por%20$13.000Cop" class="btn-comprar" target="_blank">Comprar</a>
+            </div>
+            <div class="producto-item">
+                <img src="img/lampara6.jpg" alt="Producto 5">
+                <h5>Lámpara de Mesa</h5>
+                <p>Precio: $13.000</p>
+                <a href="https://wa.me/573113275947?text=Me%20interesa%20la%20Lámpara%20de%20Escritorio%20por%20$13.000Cop" class="btn-comprar" target="_blank">Comprar</a>
+            </div>
+            <div class="producto-item">
+                <img src="img/lampara5.jpg" alt="Producto 6">
+                <h5>Lámpara de Pared</h5>
+                <p>Precio: $13.000</p>
+                <a href="https://wa.me/573113275947?text=Me%20interesa%20la%20Lámpara%20de%20Pared%20por%20$13.000Cop" class="btn-comprar" target="_blank">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <div class="descripcion-productos">
+        Lámparas elaboradas con materiales reciclados (plásticos, papel panela) con tecnología LED para eficiencia energética. Se ofrecen opciones de personalización en colores y acabados.
+      </div>
+   
+    <script>
+        function goBackToMain() {
+            window.location.href = "index.html";  
+        }
+    </script>
+
+</body>
+</html>
+
+
